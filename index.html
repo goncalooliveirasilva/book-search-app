@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>BookApp</title>
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top container"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="icons/book.png" alt="" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
+          <a class="navbar-item" href="myBook.html"> My Books </a>
+          <a class="navbar-item" href="readingInfo.html">
+            Reading Information
+          </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a id="toggle-mode" class="button is-light is-outlined">
+              <img src="icons/sun.png" />
+            </a>
+          </div>
+          <div class="navbar-item">
+            <a href="myProfile.html" class="button"> My profile </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="main-container" class="container">
+      <div class="columns">
+        <div class="column">
+          <section class="hero">
+            <div class="hero-body">
+              <p class="title">Welcome <span id="user-name"></span></p>
+              <p class="subtitle">What do you feel like reading today?</p>
+            </div>
+          </section>
+          <div class="hero">
+            <div class="hero-body">
+              <div></div>
+              <div class="columns">
+                <div class="column is-three-quarters">
+                  <form id="search-book-form" class="box">
+                    <div class="container"></div>
+                    <div class="field">
+                      <label class="label"> &#128366; Book Name </label>
+                      <div class="control">
+                        <input
+                          id="book-name"
+                          class="input"
+                          type="text"
+                          placeholder="Enter Book Name"
+                        />
+                      </div>
+                    </div>
+                    <button id="search-button" type="submit" class="button">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div id="main-picture-container" class="container">
+          </div>
+        </div>
+      </div>
+      <!-- Book Section -->
+      <div id="book-section" class="container">
+        <h4 class="title is-4">
+          Search results for: <span id="search-results"></span>:
+        </h4>
+        <h5 class="title is-5">
+          <span id="search-results-number"></span> books found
+        </h5>
+        <div class="grid is-col-min-9"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          BookApp made with
+          <span class="footer-heart"><img src="icons/heart.png" /></span> by
+          Gonçalo Silva.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="javascript/index.js"></script>
+    <script src="javascript/theme.js"></script>
+  </body>
+</html>

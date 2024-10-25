@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+.container {
+    flex: 1;
+}
+
+.footer-heart img {
+    width: 15px;
+}
+
+.book-name-label {
+    padding-left: 0;
+}
+
+#main-picture-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#main-picture {
+    height: 300px;
+}
+
+#book-section {
+    display: none;
+}
+
+.card {
+    cursor: pointer;
+}
+
+#myBook-btn-container {
+    padding-top: 25px;
+}
+
+#no-books-message {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

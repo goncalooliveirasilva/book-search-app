@@ -1,0 +1,17 @@
+/* Modo escuro */
+[data-theme="dark"] {
+    --background-color: #222;
+    --text-color: #ddd;
+  }
+  
+/* Modo claro */
+[data-theme="light"] {
+    --background-color: #fff;
+    --text-color: #000;
+}
+
+/* Aplicar as variáveis de tema */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}

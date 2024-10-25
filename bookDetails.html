@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>BookApp</title>
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top container"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="icons/book.png" alt="" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
+          <a class="navbar-item" href="myBook.html"> My Books </a>
+          <a class="navbar-item" href="readingInfo.html">
+            Reading Information
+          </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a id="toggle-mode" class="button is-light is-outlined">
+              <img src="icons/sun.png" />
+            </a>
+          </div>
+          <div class="navbar-item">
+            <a href="myProfile.html" class="button"> My profile </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="main-container" class="container">
+      <!-- Section -->
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          BookApp made with
+          <span class="footer-heart"><img src="icons/heart.png" /></span> by
+          Gonçalo Silva.
+        </p>
+      </div>
+    </footer>
+    <script src="javascript/theme.js"></script>
+    <script src="javascript/bookDetails.js"></script>
+  </body>
+</html>
